@@ -1,0 +1,13 @@
+name: Secure CI Pipeline - Smoke Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm pipeline
+        run: echo "Secure CI pipeline is running on PR"
